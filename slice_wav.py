@@ -1,7 +1,7 @@
 import wave
 import struct
 #w = wave.open('silence.wav')
-w = wave.open('start.wav')
+w = wave.open('codingiscool.wav')
 chans = w.getnchannels()
 if chans != 1:
     print("aborting, can only handle mono")
@@ -13,7 +13,7 @@ print frames
 print framerate
 
 count = 0
-slice_size = 200
+slice_size = 1000
 avg = 0
 scale = 0.01
 slice_num = 0
