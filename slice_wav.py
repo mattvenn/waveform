@@ -15,7 +15,7 @@ print framerate
 count = 0
 slice_size = 1000
 avg = 0
-scale = 0.01
+scale = 0.02
 slice_num = 0
 fh = open('results.csv','w')
 
