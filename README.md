@@ -20,6 +20,8 @@ This is a bit of an experiment. I'll cover the basics but you'll have to fill in
 
 * A laser cutter at your school and a good relationship with the DT department! The beads take about 5 minutes per student to cut. Ask them if they can try to cut the [circles.eps](circles.eps) file. This is the format we'll be providing. Ask for a sample of the material and find out its thickness. They may need to change the line width of the lines.
 * Basic Python programming experience. Turtle library familiarity would be useful. We have some lesson plans for getting started with Python and Turtle over at [The Turtle Prize](http://turtleprize.com).
+* Printer, paper for printing the patterns on.
+* Needles, strong thread, necklace/keyring joining bits.
 
 # What we'll cover
 
@@ -43,6 +45,7 @@ This is a bit of an experiment. I'll cover the basics but you'll have to fill in
 
 ## slice_wav.py
 
+* Get your students working in pairs.
 * Explain that Matt the mad professor came up with a computer program to analyse and split the wav files, but he's a bad typist and so the students need to find and fix my syntax errors. The file is called [slice_wav_broken.py](slice_wav_broken.py). You can see a working version [here](slice_wav.py).
 * slice_wav.py works by slicing a wav file into a number of segments and then averages each segment to produce an average volume. It then writes all the slices out to a CSV file called [results.csv](results.csv).
 * Ask students to modify the program so that it asks how many slices they want. 
@@ -52,9 +55,11 @@ This is a bit of an experiment. I'll cover the basics but you'll have to fill in
 
 ## Drawing circles with lines
 
+* Get students to work in 4s to solve this problem.
 * Explain that we can make the laser cutter patterns by using the Turtle library. However, we first need to write a circle drawing function. Discuss with your students how we could draw a circle using only the turtle commands `forward()` and `turn()`. Invite your students to walk around like robots or draw pictures.
 * Next move on and ask how the circle's size and smoothness relate to the number of `forward()` commands and the angle turned.
 * Keep working and end up with an equation that relates a circle's radius and smoothness to the number of `forward()` and `turn()` commands.
+* Try to solve it yourself first and then model your problem solving skills for the students.
 
 ~~~
     c = 2 * pi * r	#circumference is 2 * Pi * r
@@ -64,12 +69,13 @@ This is a bit of an experiment. I'll cover the basics but you'll have to fill in
 
 * Add some extra code so that you can specify the centre of the circle with an x and y co-ordinate.
 * Encapsulate your code in a function so you can call it whenever you want a circle.
-* See the program [circle.py](circle.py) if you get stuck.
+* See the program [circle.py](circle.py) if you get stuck with how to define and call functions.
 
 # Lesson 4
 
 ## File IO
 
+* Students working in pairs.
 * Introduce file IO. File IO is really important because it let's us use the output of other programs or existing files (like the internet) as input to our programs. We'll use file IO to read results.csv from wav_slice.py and draw our circles.
 * Show how to open and read a file using open() and readlines(). See the example [circle.py](circle.py) if you get stuck.
 * Get your students to use their circle function from the previous lesson to draw a set of circles that represent all of the slices from their wav file, they'll need to scale the radius because the numbers from wav_slice.py are quite large.
@@ -79,6 +85,11 @@ This is a bit of an experiment. I'll cover the basics but you'll have to fill in
 * Add this line at the end of the program to export an eps file. Instead of using the filename 'circles.eps', use the student's name.
 
 	getscreen().getcanvas().postscript(file="circles.eps")
+
+## Tips for students
+
+* Think about how long your piece will be. If the material is 3mm and you have 100 pieces then that's 30cm.
+* For necklaces, avoid shapes that go from very small to very large, they don't hang very well.
 
 # Laser cutting!
 
@@ -90,6 +101,7 @@ This is a bit of an experiment. I'll cover the basics but you'll have to fill in
 
 ## Assembly
 
+* Students working on their own.
 * Print out each student's eps file and use this as a template. Make sure that the file isn't scaled. 
 * Each student should lay out their beads on the template.
 * Then use a needle and thread to thread the necklace or keyring together!
