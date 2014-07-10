@@ -43,7 +43,7 @@ This is a bit of an experiment. I'll cover the basics but you'll have to fill in
 
 ## slice_wav.py
 
-* Explain that Matt the mad professor came up with a computer program to analyse and split the wav files, but he's a bad typist and so the students need to find and fix my syntax errors. The file is called [slice_wav_broken.py](slice_wav_broken.py]. You can see a working version [here](slice_wav.py).
+* Explain that Matt the mad professor came up with a computer program to analyse and split the wav files, but he's a bad typist and so the students need to find and fix my syntax errors. The file is called [slice_wav_broken.py](slice_wav_broken.py). You can see a working version [here](slice_wav.py).
 * slice_wav.py works by slicing a wav file into a number of segments and then averages each segment to produce an average volume. It then writes all the slices out to a CSV file called [results.csv](results.csv).
 * Ask students to modify the program so that it asks how many slices they want. 
 * Thing about how many slices you want. If you're using 3mm material then 100 slices would end up with a necklace 300mm long!
@@ -52,13 +52,15 @@ This is a bit of an experiment. I'll cover the basics but you'll have to fill in
 
 ## Drawing circles with lines
 
-* Explain that we can make the laser cutter patterns by using the Turtle library. However, we need to write a circle drawing function. Discuss with your students how we could draw a circle using only the turtle commands `forward()` and `turn()`. Invite your students to walk around like robots or draw pictures.
+* Explain that we can make the laser cutter patterns by using the Turtle library. However, we first need to write a circle drawing function. Discuss with your students how we could draw a circle using only the turtle commands `forward()` and `turn()`. Invite your students to walk around like robots or draw pictures.
 * Next move on and ask how the circle's size and smoothness relate to the number of `forward()` commands and the angle turned.
 * Keep working and end up with an equation that relates a circle's radius and smoothness to the number of `forward()` and `turn()` commands.
 
+~~~
     c = 2 * pi * r	#circumference is 2 * Pi * r
     l = c / segments	#the length of each segment is c / number of segments
     a = 360 / segments	#the angle to turn is 360 / number of segments
+~~~
 
 * Add some extra code so that you can specify the centre of the circle with an x and y co-ordinate.
 * Encapsulate your code in a function so you can call it whenever you want a circle.
