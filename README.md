@@ -75,7 +75,7 @@ This is a bit of an experiment. I'll cover the basics but you'll have to fill in
 * Get your students to use their circle function from the previous lesson to draw a set of circles that represent all of the slices from their wav file, they'll need to scale the radius because the numbers from wav_slice.py are quite large.
 * Now we need to space out our circles so that they can get laser cut. Ask your students how they can solve this problem and see if they can do it. If they need help then have a look at the example circle.py program.
 * Add another circle inside each of the beads for the thread to go through. A radius of 2 worked well for me.
-* Hide the turtle cursor so that it doesn't get laser cut or printed.
+* Hide the turtle cursor using `hideturtle()` so that it doesn't get laser cut or printed.
 * Add this line at the end of the program to export an eps file. Instead of using the filename 'circles.eps', use the student's name.
 
 	getscreen().getcanvas().postscript(file="circles.eps")
