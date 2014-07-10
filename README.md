@@ -18,7 +18,7 @@ This is a bit of an experiment. I'll cover the basics but you'll have to fill in
 
 # Prerequisites
 
-* A laser cutter at your school and a good relationship with the DT department! The beads take about 5 minutes per student to cut. Ask them if they can try to cut the [circles.eps](circles.eps) file. This is the format we'll be providing. Ask for a sample of the material and find out its thickness.
+* A laser cutter at your school and a good relationship with the DT department! The beads take about 5 minutes per student to cut. Ask them if they can try to cut the [circles.eps](circles.eps) file. This is the format we'll be providing. Ask for a sample of the material and find out its thickness. They may need to change the line width of the lines.
 * Basic Python programming experience. Turtle library familiarity would be useful. We have some lesson plans for getting started with Python and Turtle over at [The Turtle Prize](http://turtleprize.com).
 
 # What we'll cover
@@ -71,10 +71,11 @@ This is a bit of an experiment. I'll cover the basics but you'll have to fill in
 ## File IO
 
 * Introduce file IO. File IO is really important because it let's us use the output of other programs or existing files (like the internet) as input to our programs. We'll use file IO to read results.csv from wav_slice.py and draw our circles.
-* Show how to open and read a file using open() and readlines(). See the example[circle.py](circle.py) if you get stuck.
-* Get your students to use their circle function from the previous lesson to draw a set of circles that represent all of the slices from their wav file.
+* Show how to open and read a file using open() and readlines(). See the example [circle.py](circle.py) if you get stuck.
+* Get your students to use their circle function from the previous lesson to draw a set of circles that represent all of the slices from their wav file, they'll need to scale the radius because the numbers from wav_slice.py are quite large.
 * Now we need to space out our circles so that they can get laser cut. Ask your students how they can solve this problem and see if they can do it. If they need help then have a look at the example circle.py program.
-* Add another circle inside each of the beads for the thread to go through. A radius of 1 worked well for me.
+* Add another circle inside each of the beads for the thread to go through. A radius of 2 worked well for me.
+* Hide the turtle cursor so that it doesn't get laser cut or printed.
 * Add this line at the end of the program to export an eps file. Instead of using the filename 'circles.eps', use the student's name.
 
 	getscreen().getcanvas().postscript(file="circles.eps")
@@ -101,4 +102,6 @@ This is a bit of an experiment. I'll cover the basics but you'll have to fill in
 * The smaller beads had the centers stuck inside, although this wasn't too annoying to get out with a needle.
 * The profile of the necklace I made looks a little different to the actual wave, because of averaging?
 * I would imagine that getting the beads back to the right student could be an issue. Make sure you have lots of little bags and get each student to write the name of their file on a piece of paper inside.
+* Hide the turtle cursor so that it doesn't get laser cut or printed.
+* I had to change the line width of the circles in the eps file to 'hairline' within corel draw.
 
