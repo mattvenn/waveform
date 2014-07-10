@@ -76,6 +76,8 @@ TODO : insert equations here
 
 * You'll have to work this bit out yourself! Somehow provide all the files to the DT department and end up with each student's beads in a separate bag.
 
+![beads](beads.jpg)
+
 # Lesson 5
 
 ## Assembly
@@ -83,6 +85,8 @@ TODO : insert equations here
 * Print out each student's eps file and use this as a template. Make sure that the file isn't scaled. 
 * Each student should lay out their beads on the template.
 * Then use a needle and thread to thread the necklace or keyring together!
+
+![layout](layout.jpg)
 
 # Things to resolve
 
