@@ -56,7 +56,9 @@ This is a bit of an experiment. I'll cover the basics but you'll have to fill in
 * Next move on and ask how the circle's size and smoothness relate to the number of `forward()` commands and the angle turned.
 * Keep working and end up with an equation that relates a circle's radius and smoothness to the number of `forward()` and `turn()` commands.
 
-TODO : insert equations here
+    c = 2 * pi * r	#circumference is 2 * Pi * r
+    l = c / segments	#the length of each segment is c / number of segments
+    a = 360 / segments	#the angle to turn is 360 / number of segments
 
 * Add some extra code so that you can specify the centre of the circle with an x and y co-ordinate.
 * Encapsulate your code in a function so you can call it whenever you want a circle.
@@ -70,7 +72,10 @@ TODO : insert equations here
 * Show how to open and read a file using open() and readlines(). See the example[circle.py](circle.py) if you get stuck.
 * Get your students to use their circle function from the previous lesson to draw a set of circles that represent all of the slices from their wav file.
 * Now we need to space out our circles so that they can get laser cut. Ask your students how they can solve this problem and see if they can do it. If they need help then have a look at the example circle.py program.
-* Add this line TODO at the end of the program to export an eps file. 
+* Add another circle inside each of the beads for the thread to go through. A radius of 1 worked well for me.
+* Add this line at the end of the program to export an eps file. Instead of using the filename 'circles.eps', use the student's name.
+
+	getscreen().getcanvas().postscript(file="circles.eps")
 
 # Laser cutting!
 
@@ -88,11 +93,10 @@ TODO : insert equations here
 
 ![layout](layout.jpg)
 
-# Things to resolve
+# Things that can cause problems
 
 * Printing the template on paper is ok, but it was scaled and off centre, I had to turn off scale to fit and then some of it went off the edge.
 * The smaller beads had the centers stuck inside, although this wasn't too annoying to get out with a needle.
-* Wave form looks a little different to the actual wave, because of averaging?
-
-
+* The profile of the necklace I made looks a little different to the actual wave, because of averaging?
+* I would imagine that getting the beads back to the right student could be an issue. Make sure you have lots of little bags and get each student to write the name of their file on a piece of paper inside.
 
