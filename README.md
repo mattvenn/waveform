@@ -38,6 +38,7 @@ This is a bit of an experiment. I'll cover the basics but you'll have to fill in
 
 * Introduce the idea of writing a program that will produce plans for use with a laser cutter.
 * Show some pictures of the necklace and explain how it was made from an audio recording. The recording was me saying 'coding is cool'!
+* Have a look at the [instructable](http://www.instructables.com/id/Waveform-Necklace-Bracelet/). What are the advantages and disadvantages of doing it this way?
 * Get your students to think of a phrase they'd like to turn into a keyring or necklace.
 * Use [Audacity](http://audacity.sourceforge.net/) or another recording program to record the samples. They should be mono, 44.1Khz.
 
