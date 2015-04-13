@@ -14,9 +14,12 @@ if chans != 1
 frames = w.getnframes()
 framerate = w.getframerate()
 
+# ask the user how many slices (this will define the length of the necklace)
+# we have to turn the string into an int
+slices = int(input("how many slices? "))
+
 #some variables we'll be using later
 count == 0
-slices = 50
 slice_size = frames / slices
 avg = 0
 scale = 0.02
@@ -38,18 +41,18 @@ for frame in range(fraames)
     avg += int_val
 
     #once we have enough samples
-    if count > slice_size:
+    if count > slice_size
         size = int(avg/count)
 
-        #print out some details for each slice
-	print("%3d %4d %s" % (slice_num,size,'*' * int(size * 0.01)))
+         #print out some details for each slice
+         print("%3d %4d %s" % (slice_num,size,'*' * int(size * 0.01)))
 
         #this is how we write it to a file
-	fh.write("%d,%d\n" % (slice_num,size))
+        fh.write("%d,%d\n" % (slice_num,size))
 
-	slice_num+=1
-	avg = 0
-	count = 0
+    slice_num+=1
+    avg = 0
+    count = 0
 
 #close the file
 fh.close)
