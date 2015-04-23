@@ -1,3 +1,7 @@
+% Waveform
+% Matt Venn
+%
+
 # Waveform!
 
 Waveform is a computer science project that aims to make programming more 'real' by using computer programs to make physical objects. 
@@ -6,11 +10,11 @@ This project was inspired by the [waveform necklace](http://www.instructables.co
 
 We'll be making a necklace or a keyring like this:
 
-![necklace](necklace.jpg)
+\ ![necklace](necklace.jpg)
 
 From an audio recording like this:
 
-![necklace](codingiscool.png)
+\ ![necklace](codingiscool.png)
 
 Each student can record their own phrase or sound, and then turn it into a physical object.
 
@@ -63,9 +67,9 @@ This is a bit of an experiment. I'll cover the basics but you'll have to fill in
 * Try to solve it yourself first and then model your problem solving skills for the students.
 
 ~~~
-    c = 2 * pi * r	#circumference is 2 * Pi * r
-    l = c / segments	#the length of each segment is c / number of segments
-    a = 360 / segments	#the angle to turn is 360 / number of segments
+    c = 2 * pi * r	   #circumference is 2 * Pi * r
+    l = c / segments   #length of each segment is c / number of segments
+    a = 360 / segments #angle to turn is 360 / number of segments
 ~~~
 
 * Add some extra code so that you can specify the centre of the circle with an x and y co-ordinate.
