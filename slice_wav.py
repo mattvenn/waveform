@@ -32,26 +32,20 @@ fh = open('results.csv', 'w')
 for frame in range(frames):
     count += 1
     # this is the bit that turns the sample into a number
-    a = w.readframes(1)
-    val = struct.unpack('<h', a)
-    int_val = int(val[0])
-    int_val = abs(int_val)
-
-    # add to a running total
-    avg += int_val
+    frame = w.readframes(1)
+    val, = struct.unpack('<h', frame)
+    if val < 0:
+        continue
 
     # once we have enough samples
     if count >= slice_size:
-        size = int(avg/count)
-
         # print out some details for each slice
-        print("%3d %4d %s" % (slice_num, size, '*' * int(size * 0.01)))
+        print("%3d %4d %s" % (slice_num, val, '*' * int(val * 0.01)))
 
         # this is how we write it to a file
-        fh.write("%d,%d\n" % (slice_num, size))
+        fh.write("%d,%d\n" % (slice_num, val))
 
         slice_num += 1
-        avg = 0
         count = 0
 
 # close the file
